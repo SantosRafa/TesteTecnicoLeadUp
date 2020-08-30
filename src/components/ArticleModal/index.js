@@ -9,7 +9,7 @@ import editIcon from '../../assets/editIcon.svg';
 import deleteIcon from '../../assets/deleteIcon.svg';
 
 
-function ArticleModal({onClose = ()=>{}, id="modal"}) {
+function ArticleModal({onClose = ()=>{}, title, description, id="modal"}) {
 
   const [modalEditOpen, setModalEditOpen] = useState(false);
 
@@ -31,11 +31,10 @@ function ArticleModal({onClose = ()=>{}, id="modal"}) {
           </div>
           <div className="ArticleText">
 
-            <h2>Títullo do artigo </h2>
+            <h2>{title}</h2>
 
             <div className="textArticle">
-              <p>hsabagbsdivabsdivbasidvgbas
-                idufgvaosdvgasgvaiugfvaiufgviug</p>
+            <p>{description}</p>
             </div>
 
             <div className="buttonsAreaModel">
