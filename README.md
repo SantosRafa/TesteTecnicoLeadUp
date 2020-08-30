@@ -1,15 +1,4 @@
 
-<p align="center">
-  <img src="/src/assets/logoLeadUp.svg" height="150" width="175" alt="LeadUpDigital" />
-</p>
-
-<h4 align="center">
- LeadUp Digital é uma fábrica de software que desenvolve seu projeto do zero ao deploy com qualidade e compromisso.
-</h4>
-<p align="center">
-  Este projeto foi proposto pela LeadUp Digital como forma de avaliação de HardSkills 
-</p>
-<hr> 
 <h2>Palavras do Rafael a partir daqui </h2>
 
 <p>A LeadUp Digital me trouxe um desafio super interessante com bastante implementação de Material UI (que eu particulamente gosto muito).
@@ -35,10 +24,15 @@
   
   yarn start ou npm start
   
+  para ativer o jsonServer rode:
+  
+  node src/server/server.js
+  
   </p>
   
    <hr> 
 <h2> Considerações Finais </h2>
+<p> Finalizo esse teste bem feliz, apesar de não ter batido algumas metas propostas, espero que caso eu não seja aprovado a galera da LeadUp Digital consiga achar o que procura, gostaria também de agradece-los pela oportunidade de mostrar meu trabalho </p>
 
 <p> Do Dev ao Uuário espero que goste e qualquer dúvida ou qualquer tipo de contato pode:
   mandar email para rsantoslfap@gmail.com; 
