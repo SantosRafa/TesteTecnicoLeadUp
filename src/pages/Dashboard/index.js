@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 
 import api from '../../services/api';
 import EditModal from '../../components/EditModal';
@@ -38,8 +39,11 @@ function Dashboard() {
      <header>
        <img src={logoLeadUp} alt="LeadUp"/>
        <button type="button">
+       <Link to="/">
         <img src={logoutIcon} alt="Sair"/>
         SAIR
+        </Link>
+
        </button>
      </header>
 

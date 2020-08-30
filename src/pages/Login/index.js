@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import logoLeadUp from '../../assets/logoLeadUp.svg'
 
@@ -17,7 +18,9 @@ function Login() {
         <input type="text" name="password" id="password" placeholder="Senha"/>
 
         <button type="button">
+          <Link to="/dashboard">
           ENTRAR
+          </Link>
         </button>
        </form>
      </div>
