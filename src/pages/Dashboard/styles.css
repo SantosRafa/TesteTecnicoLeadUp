@@ -142,6 +142,7 @@ header button {
     justify-content: space-between;
     align-items: center;
     background-color:#FFF;
+    cursor:pointer;
     border-color: #00DCB7;
     border-width: 1px;
     padding:6px;
@@ -176,6 +177,7 @@ header button {
     justify-content: space-between;
     padding:9px;
     border-color: #00145F;
+    cursor:pointer;
     color:#00145F;
     font-weight:bold;
     background-color:#FFF;
@@ -184,6 +186,7 @@ header button {
   .article {
     display: flex;
     flex-direction:column;
+    cursor:pointer;
     align-items:center;
     height: 35%;
     width:23%;
@@ -221,6 +224,7 @@ header button {
   .buttonsArea button {
     display: inline-flex;
     width: 120px;
+    cursor:pointer;
     height: 45px;
     align-items: center;
     justify-content: space-evenly;

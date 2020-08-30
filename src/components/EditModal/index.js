@@ -3,8 +3,8 @@ import React from 'react';
 // import { Container } from './styles';
 import uploadIcon from '../../assets/uploadIcon.svg';
 
-import './styles.css';
-function Modal({onClose = ()=>{}, id="modal"}) {
+
+function EditModal({onClose = ()=>{}, id="modal"}) {
 
   const handleOutsideClick = (e) => {
     if(e.target.id === id){
@@ -41,4 +41,4 @@ function Modal({onClose = ()=>{}, id="modal"}) {
   );
 }
 
-export default Modal;
+export default EditModal;

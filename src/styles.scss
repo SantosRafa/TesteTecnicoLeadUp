@@ -61,10 +61,13 @@ color:#000;
 }
 
 .content form button {
+  display: flex;
+  justify-content: center;
   height: 43px;
   width:114px;
   border-color:#00145F;
   color:#00145F;
+  cursor:pointer;
   font-weight: bold;
   text-align: start;
   margin-top:1rem;
@@ -76,8 +79,10 @@ color:#000;
   border-color:#00DCB7;
   color: #00DCB7;
   text-align: start;
+  cursor:pointer;
   margin-top:2rem;
 }
+
 
 #close {
   background-color:transparent;
@@ -106,3 +111,316 @@ color:#000;
     transform:rotate(-45deg);
   }
 }
+
+
+
+.contentDeleteModal{
+  display: flex;
+  background-color:#FFF;
+  width:60%;
+  height: 30%;
+  color:#000;
+  align-items: center;
+  flex-direction:column;
+}
+
+.buttonsAreaModel{
+  display: flex;
+  flex-direction:column;
+  margin-top:2rem;
+  align-items: center;
+}
+
+.buttonsAreaModel button {
+  margin-bottom:30px;
+}
+
+.buttonsAreaModel button + button {
+  width:120px;
+}
+
+.contentDeleteModal h2 {
+  margin-top:2rem;
+  color:#00145F;
+}
+
+.contentArticleModal{
+
+  display: flex;
+  background-color:#FFF;
+  width:60%;
+  height: 60%;
+  color:#000;
+  align-items: center;
+  flex-direction:column;
+}
+
+.headerArticle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentArticleModal form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+.contentArticleModal form .textArticle{
+  display: flex;
+  flex-direction: column;
+  margin-top:10px;
+  margin-bottom:10px;
+  width: 100%;
+  padding:5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentArticleModal form .ArticleText h2 {
+  margin-left:1.9rem;
+  margin-top:0.5rem;
+}
+
+.contentArticleModal form .buttonsAreaModel {
+  display: flex;
+  flex-direction:column;
+  margin-top:2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contentArticleModal form .buttonsAreaModel  button{
+  display: flex;
+  flex-direction:row;
+  margin-bottom:1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFF;
+  height: 43px;
+  width:114px;
+  border-color:#00DCB7;
+  color: #00DCB7;
+  text-align: start;
+  cursor:pointer;
+  font-weight: bold;
+}
+
+.contentArticleModal form .buttonsAreaModel  button + button{
+  display: flex;
+  flex-direction:row;
+  margin-bottom:1rem;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  background-color: #FFF;
+  height: 43px;
+  width:114px;
+  border-color:#dc0000;
+  color: #dc0000;
+  text-align: start;
+  cursor:pointer;
+}
+
+#closeArticleModel {
+    background-color:transparent;
+    border:none;
+    outline:none;
+    width: 32px;
+    height: 32px;
+    left: 225px;
+    cursor:pointer;
+    top:0px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    &:before,
+    &:after {
+      content: ' ';
+      position: absolute;
+      width:2.5px;
+      height: 24px;
+      background-color:#000;
+    }
+    &:before{
+      transform:rotate(45deg);
+    }
+    &:after{
+      transform:rotate(-45deg);
+    }
+  }
+
+
+@media(min-width:450px){
+  .content {
+    background-color:#FFF;
+    width:60%;
+    height: 65%;
+    color:#000;
+    }
+
+    #labelTitulo{
+      margin-right:155px;
+    }
+
+    .content form label {
+      margin-right: 125px;
+      color:#00DCB7;
+      text-align: start;
+      margin-bottom:5px;
+    }
+
+}
+
+@media(min-width:500px){
+  .content {
+    background-color:#FFF;
+    width:45%;
+    height: 65%;
+    color:#000;
+    }
+
+    #labelTitulo{
+      margin-right:155px;
+    }
+
+    .content form label {
+      margin-right: 125px;
+      color:#00DCB7;
+      text-align: start;
+      margin-bottom:5px;
+    }
+
+}
+
+@media(min-width:1100px){
+  .content {
+    background-color:#FFF;
+    width:20%;
+    height: 65%;
+    color:#000;
+    }
+
+    #labelTitulo{
+      margin-right:155px;
+    }
+
+    .content form label {
+      margin-right: 125px;
+      color:#00DCB7;
+      text-align: start;
+      margin-bottom:5px;
+    }
+
+    .contentDeleteModal{
+      display: flex;
+      background-color:#FFF;
+      width:30%;
+      height: 25%;
+      color:#000;
+      align-items: center;
+      flex-direction:column;
+    }
+
+    .buttonsAreaModel{
+      display: flex;
+      width:100%;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction:row;
+      margin-top:2rem;
+      align-items: center;
+    }
+
+    #closeArticleModel {
+      background-color:transparent;
+      border:none;
+      outline:none;
+      width: 32px;
+      height: 32px;
+      left: 800px;
+      cursor:pointer;
+      top:0px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      &:before,
+      &:after {
+        content: ' ';
+        position: absolute;
+        width:2.5px;
+        height: 24px;
+        background-color:#000;
+      }
+      &:before{
+        transform:rotate(45deg);
+      }
+      &:after{
+        transform:rotate(-45deg);
+      }
+    }
+
+    .contentArticleModal form{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-left:30px;
+      margin-top:90px;
+    }
+
+    .contentArticleModal form h2 {
+      margin-top:5px;
+      text-align: center;
+      margin-left: 5.3rem;
+    }
+
+    .contentArticleModal form .buttonsAreaModel {
+      display: flex;
+      flex-direction:row;
+      margin-top:5rem;
+      margin-left:2rem;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .contentArticleModal form .textArticle{
+      display: flex;
+      flex-direction: column;
+      margin-left:50px;
+      width: 100%;
+      padding:5px;
+      align-items: center;
+
+    }
+
+    #closeArticleModel {
+      background-color:transparent;
+      border:none;
+      outline:none;
+      width: 32px;
+      height: 32px;
+      left: 700px;
+      cursor:pointer;
+      top:-160px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      &:before,
+      &:after {
+        content: ' ';
+        position: absolute;
+        width:2.5px;
+        height: 24px;
+        background-color:#000;
+      }
+      &:before{
+        transform:rotate(45deg);
+      }
+      &:after{
+        transform:rotate(-45deg);
+      }
+    }
+  }

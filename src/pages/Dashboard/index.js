@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 
-import Modal from '../../components/Modal';
+import EditModal from '../../components/EditModal';
+import DeleteModal from '../../components/DeleteModal';
+import ArticleModal from '../../components/ArticleModal';
+import AddModal from '../../components/AddModal';
 import './styles.css';
 
 import logoLeadUp from '../../assets/logoLeadUp.svg';
@@ -11,7 +14,11 @@ import editIcon from '../../assets/editIcon.svg';
 import deleteIcon from '../../assets/deleteIcon.svg';
 
 function Dashboard() {
-  const [modalEditOpen, setModalEditOpen] = useState(false)
+  const [modalEditOpen, setModalEditOpen] = useState(false);
+  const [modalAddOpen, setModalAddOpen] = useState(false);
+  const [modalDeleteOpen, setModalDeleteOpen] = useState(false);
+  const [modalArticleOpen, setModalArticleOpen] = useState(false);
+
   return (
     <div className="container">
      <header>
@@ -25,15 +32,18 @@ function Dashboard() {
 
      <div className="headerArticles">
        <h1>ARTIGOS</h1>
-       <button type="button">
+       <button type="button" onClick={()=>{setModalAddOpen(true)}}>
+            {modalAddOpen ? <AddModal onClose={()=>{setModalAddOpen(false)}}/>: null}
         <img src={addIcon} alt="Add"/>
         ADICIONAR
        </button>
       </div>
 
-     <div className="articlesContainer">
-      <div className="article">
-        <div className="articleImg">
+     <div className="articlesContainer" >
+      <div className="article" >
+
+        <div className="articleImg" onClick={()=>{setModalArticleOpen(true)}}>
+            {modalArticleOpen ? <ArticleModal onClose={()=>{setModalArticleOpen(false)}}/>: null}
           <img src={imageArticle} alt="Foto do Artigo" width="200px"/>
         </div>
 
@@ -47,12 +57,13 @@ function Dashboard() {
 
         <div className="buttonsArea">
           <button type="button" onClick={()=>{setModalEditOpen(true)}}>
-            {modalEditOpen ? <Modal onClose={()=>{setModalEditOpen(false)}}/>: null}
+            {modalEditOpen ? <EditModal onClose={()=>{setModalEditOpen(false)}}/>: null}
             <img src={editIcon} alt="Editar"/>
             EDITAR
           </button>
 
-          <button type="button">
+          <button onClick={()=>{setModalDeleteOpen(true)}}>
+            {modalDeleteOpen ? <DeleteModal onClose={()=>{setModalDeleteOpen(false)}}/>: null}
             <img src={deleteIcon} alt="Deletar"/>
             DELETAR
           </button>
