@@ -1,3 +1,3 @@
-Este projeto foi proposto pela LeadUp Digital como forma de avaliação de HardSkills
+<p>Este projeto foi proposto pela LeadUp Digital como forma de avaliação de HardSkills</p>
 
-                           ![](/src/assets/logoLeadUp.svg)
+<center><img="/src/assets/logoLeadUp.svg"></center>
